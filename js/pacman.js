@@ -4,9 +4,29 @@ var canvas = document.querySelector("canvas");
 var ctx = canvas.getContext("2d");
 var w = canvas.width;
 var h = canvas.height;
-
+var pistu=0;
 // >=test1
 // GAME FRAMEWORK
+window.onload = function() {
+	
+	var btnAudioa=document.getElementById("audioa");
+	btnAudioa.onclick=audioaKargatu;
+	
+	
+}
+function audioaKargatu(){
+	var btnAudioa=document.getElementById("audioa");
+	if(pistu===0){
+		pistu=1;
+		ready.stop();
+		btnAudioa.value="Audioa→Play";
+	}else{
+		pistu=0;
+		ready.play();
+		btnAudioa.value="Audioa→Pause";
+	}
+}
+
 var GF = function() {
 
 	// >=test2
@@ -187,6 +207,7 @@ var GF = function() {
 		this.getMapTile = function (row, col) {
 			// test5
 			// Tu código aquí
+			console.log(this.map[row][col]);
 			return this.map[row][col];
 		};
 

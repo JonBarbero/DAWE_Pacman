@@ -1,1 +1,1 @@
-# Práctica Pacman de la asignatura Desarrollo de Aplicaciones Web Enriquecidas.
+# Práctica Pacman de la asignatura Desarrollo de Aplicaciones Web Enriquecidas
